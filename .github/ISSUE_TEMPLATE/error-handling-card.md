@@ -1,8 +1,8 @@
 ---
 name: Error Handling Card
 about: Error Handling Card 템플릿
-title: "[Error] 작업 내용을 작성해 주세요."
-labels: ''
+title: "[Error] 에러 내용을 써주세요"
+labels: Error
 assignees: ''
 
 ---
