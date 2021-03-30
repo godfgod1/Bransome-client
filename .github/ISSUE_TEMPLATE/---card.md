@@ -1,8 +1,8 @@
 ---
 name: 회고 Card
 about: 회고 Card 템플릿
-title: "[회고] 작업 내용을 작성해 주세요."
-labels: ''
+title: "[회고] 몇주차 몇요일"
+labels: retrospect
 assignees: ''
 
 ---
