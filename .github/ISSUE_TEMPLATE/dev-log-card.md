@@ -1,8 +1,8 @@
 ---
 name: Dev-Log Card
 about: Dev-Log 템플릿
-title: "[Dev-Log] 작업 내용을 작성해 주세요."
-labels: ''
+title: "[✍\U0001F3FBDev-Log] 이름 / 날짜"
+labels: Dev-Log
 assignees: ''
 
 ---
