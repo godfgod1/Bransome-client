@@ -7,14 +7,6 @@ assignees: ''
 
 ---
 
-## Fill the title according to the below form
-
-[Client/Server/Database] / [#이슈번호] / edit: [수정한 파일명]
-
-ex.[Client]issue
-ex2.[Server]issue
-ex3.[Guide]issue
-
 ## ISSUE
 
 - Group: client, server, database
@@ -30,11 +22,6 @@ ex3.[Guide]issue
 - [x] 예시5
 
 [동작] #[이슈번호] - [내용]
-
-## Estimated time
-
-> Pick one of the below
-> 1h
 
 ## Labels
 
