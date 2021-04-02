@@ -2,7 +2,7 @@
 
 ***
 ## Info
-![BrandAwesome소개 GIF]()
+![Bransom소개 GIF]()
 ***
 
 ## Tech
@@ -12,4 +12,4 @@
 ![Member]()
 ***
 
-# :world_map: Wiki: [Go!Go!](https://github.com/codestates/BrandAwesome-client/wiki)
+# :world_map: Wiki: [Go!Go!](https://github.com/codestates/Bransom-client/wiki)
