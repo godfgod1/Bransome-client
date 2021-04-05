@@ -1,0 +1,14 @@
+/* CSS 예시 */
+
+/* 
+1. 구현된 기능 별로 css파일 생성
+2. 어떤 부분을 작성했는지 반드시 주석달기
+3. Mediaquery, display: flex,grid 등 적극 사용
+*/
+
+/* 전체 설정 */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
