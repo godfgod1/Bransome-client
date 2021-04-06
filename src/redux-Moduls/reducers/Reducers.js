@@ -8,7 +8,6 @@ const rootReducer = combineReducers({
  리듀서명,
 });
 
-
 */
 const rootReducer = combineReducers({});
 

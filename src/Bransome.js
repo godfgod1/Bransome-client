@@ -1,7 +1,15 @@
-import React from "react";
-
+import react from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navigation from "./components/Navgation";
+import SwitchRoute from "./Pages/Switch";
 function Bransome() {
-  return <div className="Bransome">hello world</div>;
+  return (
+    <Router>
+      <div>
+        <Navigation />
+        <SwitchRoute />
+      </div>
+    </Router>
+  );
 }
-
 export default Bransome;
