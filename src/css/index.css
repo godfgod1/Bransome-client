@@ -7,8 +7,13 @@
 */
 
 /* 전체 설정 */
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  overflow: hidden;
+}
+
+:root {
+  --main-color: rgb(255, 115, 0);
 }

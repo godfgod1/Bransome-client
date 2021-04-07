@@ -8,4 +8,4 @@ const a = () => {};
 
 const b = () => {};
 
-export const actionCreators = { a, b, c };
+export const actionCreators = { a, b };
