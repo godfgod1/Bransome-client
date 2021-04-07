@@ -14,3 +14,4 @@ const SwitchRoute = () => {
 };
 
 export default SwitchRoute;
+//<Route path="/mypages" component={} />
