@@ -16,8 +16,16 @@
   font-family: "PT Sans", sans-serif;
 }
 
+button {
+  border: none;
+  outline: none;
+}
 :root {
   --main-btn-color: rgb(255, 115, 0);
   --main-body-color: #191f28;
   --main-text-color: white;
+  --width-pers: 100%;
+  --width-vw: 100vw;
+  --height-pers: 100%;
+  --height-vh: 100vh;
 }

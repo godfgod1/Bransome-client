@@ -39,7 +39,7 @@ const Navigation = () => {
               Blog
             </a>
           </li>
-          <li className="navbar_link_btn navbar_item">
+          <li className="navbar_sign_box navbar_item">
             <button className="navbar_sign_in_btn">로그인</button>
           </li>
         </ul>

@@ -1,4 +1,5 @@
 import { combineReducers } from "redux";
+import slideReducer from "./slideReducer";
 const initialState = require("./initialState");
 /* 작성예시
 
