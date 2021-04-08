@@ -13,23 +13,53 @@
   flex-direction: column;
   justify-content: center;
   background-color: white;
-  width: 70vw;
+  width: 80%;
   height: 80vh;
   border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.376);
 }
 
+/* 캐로셀 */
 .carousel_screen_container {
   background-color: white;
   height: 80%;
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
 }
+.carousel_slide {
+  font-size: 5em;
+  min-width: 100%;
+  transition: 0.5s;
+}
 
-.slide-content {
-  min-width: var(--width-pers);
-  height: 80vh;
+.slide-image {
+  width: var(--width-pers);
+  height: var(--height-vh);
+}
+
+/* 캐로셀 버튼 */
+.carousel_btn {
+  position: absolute;
+  transform: translateY(0%);
+  font-size: 3rem;
+  z-index: 99;
+}
+
+.carousel_btn_right {
+  right: 12%;
+  transition: linear 0.2s;
+}
+
+.carousel_btn_left {
+  left: 12%;
+  transition: linear 0.2s;
+}
+.carousel_btn_right:hover {
+  color: rgb(226, 226, 226);
+}
+
+.carousel_btn_left:hover {
+  color: rgb(226, 226, 226);
 }
