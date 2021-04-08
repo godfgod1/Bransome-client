@@ -2,4 +2,41 @@
   height: 100vh;
   width: 100%;
   background-color: var(--main-body-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.view_1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: contain;
+  margin-top: 10%;
+}
+
+.view_1 > h1 {
+  font-size: 5rem;
+}
+
+.view_1 > h2 {
+  margin-top: 2%;
+  font-size: 4rem;
+}
+
+.view_1 > p {
+  margin-top: 1%;
+  font-size: 1.5rem;
+  color: var(--main-btn-color);
+}
+
+.search {
+  margin-top: 20%;
+}
+
+.home_search {
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
 }

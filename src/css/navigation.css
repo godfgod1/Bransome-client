@@ -11,49 +11,53 @@
 
 .navbar_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  width: 100vw;
 }
 
 .navbar_logo {
-  justify-self: start;
+  display: flex;
+  align-items: center;
+  margin-left: 1%;
   cursor: progress;
 }
 
-.navbar_links {
-  display: flex;
-  font-size: 2rem;
-  justify-self: center;
+.navbar_item_box {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 30px;
+  font-size: 1.8rem;
+  text-align: center;
+  justify-self: end;
   cursor: pointer;
   text-decoration: none;
+  margin-right: 40px;
 }
 
-.navbar_item {
-  margin-left: 20px;
-}
 .navbar_link_btn {
   text-decoration: none;
+  font-weight: bolder;
 }
 .navbar_sign_in_btn {
   font-weight: bold;
   font-size: 1.3rem;
-  padding: 5px 20px;
+  padding: 5px 25px;
   border-radius: 5px;
   cursor: pointer;
   color: white;
   border: none;
-  background-color: var(--main-color);
+  background-color: var(--main-btn-color);
 }
 
 .navbar_sign_in_btn:hover {
   font-weight: bold;
   font-size: 1.3rem;
-  padding: 5px 20px;
+  padding: 5px 25px;
   border-radius: 5px;
   cursor: pointer;
   color: rgb(0, 26, 255);
   border: none;
-  background-color: var(--main-color);
 }
 
 @media all and (max-width: 740px) {
