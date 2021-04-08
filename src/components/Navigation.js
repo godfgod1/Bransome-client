@@ -5,12 +5,11 @@ const Navigation = () => {
   return (
     <nav className="navbar_box">
       <div className="navbar_container">
-        <div className="navbar_logo">
-          <Link to="/">
-            <img src={logo} />
-          </Link>
-        </div>
-        <ul className="navbar_links">
+        <Link to="/" className="navbar_logo">
+          <img src={logo} />
+        </Link>
+
+        <ul className="navbar_item_box">
           <li className="navbar_item">
             <Link to="/" className="navbar_link_btn navbar_home_btn">
               Home
