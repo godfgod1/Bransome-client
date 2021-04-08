@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import slideReducer from "./slideReducer";
-const initialState = require("./initialState");
+import searchReducers from "./searchReducers";
+
 /* 작성예시
 
 import 리듀서명 from "./리듀서"
@@ -10,6 +10,6 @@ const rootReducer = combineReducers({
 });
 
 */
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({ searchReducers });
 
 export default rootReducer;

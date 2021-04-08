@@ -1,7 +1,7 @@
-import { TYPE } from "../Actions";
 //기본적인 initialState설정
 const initialState = {
-  activeIdx: 0,
-  translate: 0,
+  contents: ["코카콜라, 펩시, 애플"],
+  valeu: "",
+  works: [],
 };
 export default initialState;

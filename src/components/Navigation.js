@@ -1,12 +1,12 @@
 import { NavLink as Link } from "react-router-dom";
 
-import logo from "../logos/bransome3.png";
+import logo from "../logos/bransome4-white2.png";
 const Navigation = () => {
   return (
     <nav className="navbar_box">
       <div className="navbar_container">
         <Link to="/" className="navbar_logo">
-          <img src={logo} />
+          <img src={logo} className="logos" />
         </Link>
 
         <ul className="navbar_item_box">
@@ -26,10 +26,13 @@ const Navigation = () => {
             </Link>
           </li>
           <li className="navbar_item">
-            <Link to="/brandinfo" className="navbar_link_btn navbar_brandinfo_btn">
+            <Link
+              to="/brandinfo"
+              className="navbar_link_btn navbar_brandinfo_btn"
+            >
               brandinfo
             </Link>
-            </li>
+          </li>
 
           <li className="navbar_item">
             <a

@@ -6,7 +6,7 @@
   top: 0;
   z-index: 999;
   height: 70px;
-  background-color: wheat;
+  background-color: var(--main-body-color);
 }
 
 .navbar_container {
@@ -21,6 +21,9 @@
   align-items: center;
   margin-left: 1%;
   cursor: progress;
+}
+.logos {
+  width: 200px;
 }
 
 .navbar_item_box {
