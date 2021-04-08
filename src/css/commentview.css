@@ -4,6 +4,6 @@
   justify-content: center;
   align-items: center;
   height: var(--height-vh);
-  width: var(--width-vw);
+  width: var(--width-pers);
   background-color: var(--main-body-color);
 }
