@@ -1,15 +1,15 @@
-import { Link } from "react-router-dom";
-import "../css/navigation.css";
+import { NavLink as Link } from "react-router-dom";
+
 import logo from "../logos/bransome3.png";
 const Navigation = () => {
   return (
-    <nav id="navbar_box">
+    <nav className="navbar_box">
       <div className="navbar_container">
-        <span className="navbar_logo">
+        <div className="navbar_logo">
           <Link to="/">
             <img src={logo} />
           </Link>
-        </span>
+        </div>
         <ul className="navbar_links">
           <li className="navbar_item">
             <Link to="/" className="navbar_link_btn navbar_home_btn">
