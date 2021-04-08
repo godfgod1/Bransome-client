@@ -8,12 +8,13 @@
 
 /* 전체 설정 */
 * {
+  box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   list-style: none;
-  overflow: hidden;
 }
 
 :root {
-  --main-color: rgb(255, 115, 0);
+  --main-btn-color: rgb(255, 115, 0);
+  --main-body-color: #191f28;
 }
