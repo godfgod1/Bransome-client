@@ -3,14 +3,9 @@
    border : 1px solid green
 } */
 
-button {
-  border: 0;
-  outline:0;
-}
-
 .wrap {
   margin-top: 20px;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -37,13 +32,12 @@ button {
 }
 
 .contents-menu {
-  display: inline-block; 
+  display: inline-block;
   outline: 0;
-  margin-right:20px;
-  
+  margin-right: 20px;
 }
 
-.contents-menu button {
+.contents-menu > button {
   padding: 10px 30px 10px 30px;
   background-color: var(--main-btn-color);
   color: white;
@@ -51,7 +45,7 @@ button {
   margin: 3px;
 }
 
-.contents-menu button:hover {
+.contents-menu > button:hover {
   box-shadow: 3px 3px 3px #3f00c71a;
 }
 
@@ -61,19 +55,19 @@ button {
 }
 
 .contents-action {
-  display: inline-block; 
+  display: inline-block;
   font-size: 15px;
   margin-left: 80px;
 }
 
-.btn_action{
+.btn_action {
   vertical-align: middle;
   width: 30px;
   height: 40px;
   object-fit: cover;
   outline: 0;
   border: 0;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
 }
 
 #contents {
@@ -83,15 +77,15 @@ button {
 }
 
 .contents-box {
-background-color: #ffff;
-margin-top: 10px;
-margin-bottom: 10px;
- width: 600px;
- height: 300px;
- border-radius: 8px;
+  background-color: #ffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 600px;
+  height: 300px;
+  border-radius: 8px;
 }
 
-.contents-box div {
+.contents-box {
   margin: auto;
   padding: 60px;
 }
@@ -99,7 +93,7 @@ margin-bottom: 10px;
 .contents_btn {
   padding: 20px 40px 20px 40px;
   margin: 3px;
-  background-color:#FF8A3D;
+  background-color: #ff8a3d;
   border-radius: 4px;
   color: #fff;
   font-size: 15px;
