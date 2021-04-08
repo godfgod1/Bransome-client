@@ -1,0 +1,112 @@
+/* BrandInfo */
+/* *{
+   border : 1px solid green
+} */
+
+button {
+  border: 0;
+  outline:0;
+}
+
+.wrap {
+  margin-top: 20px;
+  background-color: #E6E6E6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  text-align: center;
+}
+
+#brand-logo {
+  margin-top: 10px;
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#contents-top {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.contents-menu {
+  display: inline-block; 
+  outline: 0;
+  margin-right:20px;
+  
+}
+
+.contents-menu button {
+  padding: 10px 30px 10px 30px;
+  background-color: var(--main-btn-color);
+  color: white;
+  border-radius: 4px;
+  margin: 3px;
+}
+
+.contents-menu button:hover {
+  box-shadow: 3px 3px 3px #3f00c71a;
+}
+
+#views {
+  display: inline-block;
+  text-align: center;
+}
+
+.contents-action {
+  display: inline-block; 
+  font-size: 15px;
+  margin-left: 80px;
+}
+
+.btn_action{
+  vertical-align: middle;
+  width: 30px;
+  height: 40px;
+  object-fit: cover;
+  outline: 0;
+  border: 0;
+  background-color: #E6E6E6;
+}
+
+#contents {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.contents-box {
+background-color: #ffff;
+margin-top: 10px;
+margin-bottom: 10px;
+ width: 600px;
+ height: 300px;
+ border-radius: 8px;
+}
+
+.contents-box div {
+  margin: auto;
+  padding: 60px;
+}
+
+.contents_btn {
+  padding: 20px 40px 20px 40px;
+  margin: 3px;
+  background-color:#FF8A3D;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.contents_btn:hover {
+  background-color: var(--main-btn-color);
+  box-shadow: 3px 3px 3px #3f00c71a;
+}
