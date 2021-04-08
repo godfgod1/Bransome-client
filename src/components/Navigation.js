@@ -25,6 +25,11 @@ const Navigation = () => {
               Best20
             </Link>
           </li>
+          <li className="navbar_item">
+            <Link to="/brandinfo" className="navbar_link_btn navbar_brandinfo_btn">
+              brandinfo
+            </Link>
+            </li>
 
           <li className="navbar_item">
             <a
