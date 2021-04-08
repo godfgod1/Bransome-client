@@ -12,9 +12,12 @@
   margin: 0px;
   padding: 0px;
   list-style: none;
+
+  font-family: "PT Sans", sans-serif;
 }
 
 :root {
   --main-btn-color: rgb(255, 115, 0);
   --main-body-color: #191f28;
+  --main-text-color: white;
 }
