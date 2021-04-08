@@ -1,16 +1,16 @@
-#navbar_box {
-  background: beige;
+.navbar_box {
   display: flex;
-  height: 80px;
+  justify-content: center;
+  align-items: center;
   position: sticky;
-  z-index: 999;
   top: 0;
-  flex-direction: row;
+  z-index: 999;
+  height: 80px;
+  background-color: wheat;
 }
 
 .navbar_container {
   display: flex;
-  width: 100%;
   justify-content: space-around;
   align-items: center;
 }
@@ -56,14 +56,25 @@
   background-color: var(--main-color);
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 740px) {
   #navbar_box {
-    flex-wrap: wrap;
-    height: 500px;
+    background: beige;
+    display: flex;
+    height: 80px;
+    z-index: 999;
+    top: 0;
     flex-direction: column;
   }
-  .navbar_links {
-    flex-wrap: wrap;
+
+  .navbar_container {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar_logo {
+    justify-self: start;
+    cursor: progress;
   }
 }
