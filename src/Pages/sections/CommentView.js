@@ -1,4 +1,6 @@
 import comments from "./fakedata/fakeComment";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
 const CommentView = () => {
   return (
     <section className="home_view_container3">
@@ -9,11 +11,13 @@ const CommentView = () => {
         <ul className="comments_container">
           {comments.map((data, idx) => (
             <li key={idx} className="comments_list">
-              <div className="profile_image">프로필사진</div>
+              <div className="profile_image">
+                <div className="user_image"></div>
+              </div>
               <span>
                 <h1 className="comments_title">{data.commentsTitle}</h1>
-                <p>{data.user}</p>
-                <div className="comments_contents">{data.contents}</div>
+                <p className="comments_user">{data.user}</p>
+                <p className="comments_contents">{data.contents}</p>
               </span>
             </li>
           ))}

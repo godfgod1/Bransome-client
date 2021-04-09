@@ -22,7 +22,9 @@
 
 .comments_container {
   display: flex;
-  background-color: white;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+
   margin: 10%;
   padding: 2% 3%;
 
@@ -34,23 +36,53 @@
 
 .comments_list {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 1%;
+  grid-template-columns: 13% 90%;
+  grid-gap: 1px;
+  place-items: center;
+
+  border: 1px black solid;
+  border-radius: 40px;
+  padding: 2%;
+  margin: 1% 0%;
+}
+
+.profile_image {
+  border: solid 5px green;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  align-items: center;
 }
 
 .comments_list > span {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-left: 10%;
+  margin-left: 4%;
 }
 
 .comments_contents {
   line-height: 1.4;
-  height: 5em;
+  height: 4em;
   white-space: normal;
   overflow: hidden;
   text-align: left;
   word-wrap: break-word;
   line-clamp: 3;
+
+  width: 80%;
+}
+
+.comments_title {
+  font-size: 1.5rem;
+}
+
+.comments_user {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: gray;
+  margin-bottom: 3%;
+}
+
+.comments_contents {
 }
