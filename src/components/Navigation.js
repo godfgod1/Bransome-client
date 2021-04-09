@@ -6,7 +6,7 @@ const Navigation = () => {
     <nav className="navbar_box">
       <div className="navbar_container">
         <Link to="/" className="navbar_logo">
-          <img id="logo" src={logo} />
+          <img id="logos" src={logo} />
         </Link>
 
         <ul className="navbar_item_box">
@@ -23,6 +23,14 @@ const Navigation = () => {
           <li className="navbar_item">
             <Link to="/best20" className="navbar_link_btn navbar_best_btn">
               Best20
+            </Link>
+          </li>
+          <li className="navbar_item">
+            <Link
+              to="/brandinfo"
+              className="navbar_link_btn navbar_brandinfo_btn"
+            >
+              brandinfo
             </Link>
           </li>
 

@@ -4,62 +4,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--main-body-color);
+  background: rgb(25, 31, 40);
+  background: linear-gradient(
+    180deg,
+    rgba(25, 31, 40, 0) 0%,
+    rgba(25, 31, 40, 0.37) 1%,
+    rgba(25, 31, 40, 0.76) 2%,
+    rgba(25, 31, 40, 0.945) 4%,
+    rgba(25, 31, 40, 1) 100%
+  );
 }
 
-.view2_content_box {
+.view2_content_box-1,
+.view2_content_box-2 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   background-color: white;
-  width: 80%;
+  width: 40%;
   height: 80vh;
+  margin: 20px;
   border-radius: 10px;
-  box-shadow: 10px 10px 20px rgba(128, 128, 128, 0.376);
-}
-
-/* 캐로셀 */
-.carousel_screen_container {
-  background-color: white;
-  height: 80%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  overflow: hidden;
-}
-.carousel_slide {
-  font-size: 5em;
-  min-width: 100%;
-  transition: 0.5s;
-}
-
-.slide-image {
-  width: var(--width-pers);
-  height: var(--height-vh);
-}
-
-/* 캐로셀 버튼 */
-.carousel_btn {
-  position: absolute;
-  transform: translateY(0%);
-  font-size: 3rem;
-  z-index: 99;
-}
-
-.carousel_btn_right {
-  right: 12%;
-  transition: linear 0.2s;
-}
-
-.carousel_btn_left {
-  left: 12%;
-  transition: linear 0.2s;
-}
-.carousel_btn_right:hover {
-  color: rgb(226, 226, 226);
-}
-
-.carousel_btn_left:hover {
-  color: rgb(226, 226, 226);
 }

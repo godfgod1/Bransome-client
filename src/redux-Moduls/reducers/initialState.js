@@ -1,7 +1,8 @@
-import { TYPE } from "../Actions";
 //기본적인 initialState설정
 const initialState = {
-  activeIdx: 0,
-  translate: 0,
+  brands: [],
+  value: "",
+  brand: [],
+  loading: false,
 };
 export default initialState;
