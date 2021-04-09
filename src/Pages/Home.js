@@ -6,6 +6,7 @@ import Aos from "aos";
 import WelcomeView from "./sections/WelcomeView";
 import StoryView from "./sections/StoryView";
 import CommentView from "./sections/CommentView";
+import FooterContent from "../components/FooterContent";
 
 const Home = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const Home = () => {
       <WelcomeView />
       <StoryView />
       <CommentView />
+      <FooterContent />
     </section>
   );
 };
