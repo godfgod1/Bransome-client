@@ -1,12 +1,12 @@
 import { NavLink as Link } from "react-router-dom";
 
-import logo from "../logos/bransome3.png";
+import logo from "../logos/기본 로고-003.png";
 const Navigation = () => {
   return (
     <nav className="navbar_box">
       <div className="navbar_container">
         <Link to="/" className="navbar_logo">
-          <img src={logo} />
+          <img id="logo" src={logo} />
         </Link>
 
         <ul className="navbar_item_box">
@@ -25,11 +25,6 @@ const Navigation = () => {
               Best20
             </Link>
           </li>
-          <li className="navbar_item">
-            <Link to="/brandinfo" className="navbar_link_btn navbar_brandinfo_btn">
-              brandinfo
-            </Link>
-            </li>
 
           <li className="navbar_item">
             <a
