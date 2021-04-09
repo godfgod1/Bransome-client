@@ -14,9 +14,6 @@ const StoryView = () => {
       <div className="view2_content_box-1">
         <SlideCarousel />
       </div>
-      <div className="view2_content_box-2">
-        <SlideCarousel />
-      </div>
     </article>
   );
 };

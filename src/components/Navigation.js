@@ -1,12 +1,12 @@
 import { NavLink as Link } from "react-router-dom";
 
-import logo from "../logos/bransome4-white2.png";
+import logo from "../logos/기본 로고-003.png";
 const Navigation = () => {
   return (
     <nav className="navbar_box">
       <div className="navbar_container">
         <Link to="/" className="navbar_logo">
-          <img src={logo} className="logos" />
+          <img id="logos" src={logo} />
         </Link>
 
         <ul className="navbar_item_box">

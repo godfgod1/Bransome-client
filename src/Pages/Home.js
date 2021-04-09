@@ -9,7 +9,7 @@ import CommentView from "./sections/CommentView";
 
 const Home = () => {
   useEffect(() => {
-    Aos.init({ duration: 1500, once: true });
+    Aos.init({ duration: 1000 });
   }, []);
   useEffect(() => {
     if (Aos) {
