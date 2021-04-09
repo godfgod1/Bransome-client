@@ -1,1 +1,3 @@
-const FooterBar = () => {};
+const FooterBar = () => {
+  return <footer></footer>;
+};
