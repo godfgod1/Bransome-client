@@ -1,12 +1,16 @@
-import { SEARCH } from "../actions";
+import { LOADING, SEARCH } from "../actions";
 import initialState from "./initialState";
 
 const searchReducers = (state = initialState, action) => {
   switch (action.type) {
     case SEARCH: {
-      const { value } = action;
-      const works = state.contents.filter((val) => val.includes(value));
-      return { ...state, value, works };
+      return { ...state, value: action.payload, loading: false };
+    }
+    case LOADING: {
+      return {
+        ...state,
+        loading: true,
+      };
     }
     default:
       return state;

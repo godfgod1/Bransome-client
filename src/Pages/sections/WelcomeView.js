@@ -1,5 +1,4 @@
 import SearchBar from "../../components/SearchBar";
-import WorkList from "../../components/WorkList";
 
 const WelcomeView = () => {
   return (
@@ -10,7 +9,6 @@ const WelcomeView = () => {
         <h2 data-aos="zoom-in">브랜썸.</h2>
         <p data-aos="zoom-in">쉽고 빠르게 영감을 얻어가세요.</p>
         <SearchBar />
-        <WorkList />
       </div>
     </article>
   );

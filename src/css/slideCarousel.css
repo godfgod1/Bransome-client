@@ -1,0 +1,47 @@
+/* 캐로셀 */
+.carousel_screen_container {
+  background-color: white;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.carousel_slide {
+  font-size: 5em;
+  min-width: 100%;
+  transition: 0.5s;
+}
+
+.slide-image {
+  width: var(--width-pers);
+  height: var(--height-vh);
+}
+
+/* 캐로셀 버튼 */
+#btn_box {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  justify-content: space-evenly;
+}
+.carousel_btn {
+  transform: translateY(0%);
+  font-size: 3rem;
+  z-index: 99;
+}
+
+.carousel_btn_right {
+  transition: linear 0.2s;
+}
+
+.carousel_btn_left {
+  transition: linear 0.2s;
+}
+.carousel_btn_right:hover {
+  color: rgb(226, 226, 226);
+}
+
+.carousel_btn_left:hover {
+  color: rgb(226, 226, 226);
+}
