@@ -16,13 +16,25 @@ const FooterContent = () => {
         <a
           className="social_btn"
           href="https://github.com/codestates/Bransome-client"
+          target="_blank"
+          rel="noreferrer"
         >
           <img className="github_btn" src={github} />
         </a>
-        <a className="social_btn" href="https://www.google.co.kr/">
+        <a
+          className="social_btn"
+          href="https://www.google.co.kr/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img className="google_btn" src={googlePlus} />
         </a>
-        <a className="social_btn" href="https://www.apple.com/kr">
+        <a
+          className="social_btn"
+          href="https://www.apple.com/kr"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img className="apple_btn" src={apple} />
         </a>
       </div>
