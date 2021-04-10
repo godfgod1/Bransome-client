@@ -27,25 +27,23 @@ const SlideCarousel = () => {
 
   return (
     <>
-      <p>사용하는 방법!</p>
-      <form id="btn_box">
-        <FontAwesomeIcon
-          icon={faCaretSquareRight}
-          data-aos="zoom-in"
-          className="carousel_btn carousel_btn_right"
-          onClick={rightSlides}
-        >
-          버튼
-        </FontAwesomeIcon>
-        <FontAwesomeIcon
-          icon={faCaretSquareLeft}
-          data-aos="zoom-in"
-          className="carousel_btn carousel_btn_left"
-          onClick={leftSlides}
-        >
-          버튼
-        </FontAwesomeIcon>
-      </form>
+      <FontAwesomeIcon
+        icon={faCaretSquareRight}
+        data-aos="zoom-in"
+        className="carousel_btn carousel_btn_right"
+        onClick={rightSlides}
+      >
+        버튼
+      </FontAwesomeIcon>
+      <FontAwesomeIcon
+        icon={faCaretSquareLeft}
+        data-aos="zoom-in"
+        className="carousel_btn carousel_btn_left"
+        onClick={leftSlides}
+      >
+        버튼
+      </FontAwesomeIcon>
+
       <div className="carousel_screen_container" data-aos="zoom-in">
         {slider.map((slide, idx) => (
           <div

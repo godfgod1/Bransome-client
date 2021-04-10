@@ -1,12 +1,13 @@
 import { NavLink as Link } from "react-router-dom";
 
-import logo from "../logos/기본 로고-003.png";
+import MainLogo from "../logos/기본 로고-003.png";
+import GithubLogos from "../logos/github.png";
 const Navigation = () => {
   return (
     <nav className="navbar_box">
       <div className="navbar_container">
         <Link to="/" className="navbar_logo">
-          <img id="logos" src={logo} />
+          <img id="logos" src={MainLogo} />
         </Link>
 
         <ul className="navbar_item_box">
@@ -34,14 +35,6 @@ const Navigation = () => {
             </Link>
           </li>
 
-          <li className="navbar_item">
-            <a
-              className="navbar_link_btn"
-              href="https://github.com/codestates/Bransome-client"
-            >
-              Blog
-            </a>
-          </li>
           <li className="navbar_sign_box navbar_item">
             <button className="navbar_sign_in_btn">로그인</button>
           </li>

@@ -72,5 +72,8 @@
   border: none;
 }
 
+.github_url {
+  width: 180px;
+}
 @media all and (max-width: 740px) {
 }
