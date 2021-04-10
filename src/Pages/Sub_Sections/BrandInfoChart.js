@@ -1,4 +1,4 @@
-import "../css/BrandInfo.css";
+import "../../css/BrandInfo.css";
 
 const BrandInfoChart = () => {
   return (

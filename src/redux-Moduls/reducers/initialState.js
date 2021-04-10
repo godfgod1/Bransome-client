@@ -4,5 +4,6 @@ const initialState = {
   value: "",
   brand: [],
   loading: false,
+  openModalScreen: false,
 };
 export default initialState;

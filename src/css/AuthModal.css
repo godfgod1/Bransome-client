@@ -1,0 +1,54 @@
+.modal_login_btn {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 5px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: var(--main-btn-color);
+}
+
+.modal_login_btn:active {
+  transition: ease-in 5s;
+}
+
+.modal_container {
+  width: var(--width-pers);
+  height: var(--height-vh);
+
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*애니메이션 적용*/
+}
+
+.modal_container:active {
+}
+
+.modal_item {
+  width: 800px;
+  height: 500px;
+  background: var(--main-btn-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  z-index: 10;
+  border-radius: 10px;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+}

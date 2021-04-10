@@ -5,6 +5,8 @@ export const NEXT_SLIDE = "NEXT_SLIDE";
 export const PREV_SLIDE = "PREV_SLIDE";
 export const SEARCH = "SEARCH";
 export const LOADING = "LOADING";
+export const OPEN_MODAL = "OPEN_MODAL";
+export const CLOSE_MODAL = "CLOSE_MODAL";
 /* ACTIONS */
 
 // const a = () => {};
@@ -23,5 +25,20 @@ export const search = (value) => (dispatch) => {
 export const setLoanding = () => {
   return {
     type: LOADING,
+  };
+};
+
+export const openModal = () => {
+  console.log("openModal");
+  return {
+    type: OPEN_MODAL,
+    payload: true,
+  };
+};
+
+export const closeModal = () => {
+  return {
+    type: CLOSE_MODAL,
+    payload: false,
   };
 };
