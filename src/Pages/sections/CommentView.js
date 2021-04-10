@@ -5,7 +5,7 @@ const CommentView = () => {
   return (
     <section className="home_view_container3">
       <aside className="view3_left">
-        <h3>사용해 보신 분들의 후기입니다.</h3>
+        <h3 data-aos="fade-right">이용해 보신 분들의 후기입니다.</h3>
       </aside>
       <aside className="view3_right">
         <ul className="comments_container">
