@@ -9,10 +9,6 @@
   background-color: var(--main-btn-color);
 }
 
-.modal_login_btn:active {
-  transition: ease-in 5s;
-}
-
 .modal_container {
   width: var(--width-pers);
   height: var(--height-vh);
@@ -27,13 +23,11 @@
   /*애니메이션 적용*/
 }
 
-.modal_container:active {
-}
-
 .modal_item {
   width: 800px;
   height: 500px;
   background: var(--main-btn-color);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
@@ -41,14 +35,20 @@
   border-radius: 10px;
 }
 
-@keyframes modalopen {
-  from {
-    opacity: 0;
-    transform: translateY(0%);
-  }
+.modal_close_btn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  z-index: 111;
+}
 
-  to {
-    opacity: 1;
-    transform: translateY(100%);
-  }
+.modal_contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }

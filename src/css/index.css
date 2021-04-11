@@ -15,7 +15,17 @@
 
   font-family: "PT Sans", sans-serif;
 }
-
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: inherit;
+}
+::-webkit-scrollbar-track {
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main-btn-color);
+  border-radius: 7px;
+  width: 30px;
+}
 button {
   border: none;
   outline: none;

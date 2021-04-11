@@ -37,7 +37,7 @@ const Navigation = () => {
           </li>
 
           <li className="navbar_sign_box navbar_item">
-            <button className="modal_login_btn" onClick={() => manageState()}>
+            <button className="modal_login_btn" onClick={manageState}>
               로그인
             </button>
             <AuthModal show={open} setShow={setOpen} />
