@@ -6,7 +6,7 @@ import Navigation from "./components/Navigation";
 import Best20 from "./Pages/BestPage";
 import Brand from "./Pages/BrandsPage";
 import Home from "./Pages/Home";
-import BrandInfo from "./components/BrandInfo";
+import BrandInfo from "./Pages/Sub_Sections/BrandInfo";
 
 function Bransome() {
   return (
@@ -14,9 +14,9 @@ function Bransome() {
       <Navigation />
       <Switch>
         <Route path="/" exact component={Home} />
+
         <Route path="/brand" component={Brand} />
         <Route path="/best20" component={Best20} />
-        <Route path="/brandinfo" component={BrandInfo} />
       </Switch>
     </Router>
   );

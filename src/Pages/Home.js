@@ -3,9 +3,9 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Aos from "aos";
 
-import WelcomeView from "./sections/WelcomeView";
-import StoryView from "./sections/StoryView";
-import CommentView from "./sections/CommentView";
+import WelcomeView from "./Main_Sections/WelcomeView";
+import StoryView from "./Main_Sections/StoryView";
+import CommentView from "./Main_Sections/CommentView";
 import FooterContent from "../components/FooterContent";
 
 const Home = () => {

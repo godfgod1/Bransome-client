@@ -4,7 +4,7 @@
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 100;
   height: 70px;
   background-color: var(--main-body-color);
 }
@@ -50,17 +50,6 @@
 .navbar_link_btn:hover {
   border-bottom: 5px solid var(--main-text-color);
   transition: all 0.3s ease-out;
-}
-
-.navbar_sign_in_btn {
-  font-weight: bold;
-  font-size: 1.5rem;
-  padding: 5px 25px;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  border: none;
-  background-color: var(--main-btn-color);
 }
 
 .navbar_sign_in_btn:hover {

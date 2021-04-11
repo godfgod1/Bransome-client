@@ -5,16 +5,16 @@ import {
   Switch,
 } from "react-router-dom";
 
-import netflix from "../images/test.netflix.png";
-import eye from "../images/eye.icon.svg";
-import heart from "../images/heart.icon.svg";
-import save from "../images/save.icon.svg";
+import netflix from "../../images/test.netflix.png";
+import eye from "../../images/eye.icon.svg";
+import heart from "../../images/heart.icon.svg";
+import save from "../../images/save.icon.svg";
 
 import history from "./BrandInfoHistory";
 import chart from "./BrandInfoChart";
 import insight from "./BrandInfoInsight";
 
-import "../css/BrandInfo.css";
+import "../../css/BrandInfo.css";
 
 const BrandInfo = ({ match }) => {
   return (
