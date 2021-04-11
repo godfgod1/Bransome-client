@@ -1,9 +1,9 @@
 import React from "react";
-import "../css/BrandInfo.css";
+import "../../css/BrandInfo.css";
 
 const BrandInfoHistory = () => {
   return (
-    <section id="contents">
+    <article id="contents">
       <div className="contents-box">
         넷플릭스 주식회사(영어: Netflix, Inc.)는 미국의 주문형 콘텐츠 서비스
         제작 기업이다. 1997년 캘리포니아주 스콧츠 밸리에서 리드 해스팅스와 마크
@@ -16,7 +16,7 @@ const BrandInfoHistory = () => {
         190여개국 1억 5830만명의 회원을 두고 있다.[3] 시가총액 기준으로 세계
         4위의 미디어 그룹이다.
       </div>
-    </section>
+    </article>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/BrandInfo.css";
+import "../../css/BrandInfo.css";
 import BrandInfo from "./BrandInfo";
 
 const BrandInfoContentsBox = () => {

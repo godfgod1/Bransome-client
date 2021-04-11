@@ -10,6 +10,7 @@ import "./css/commentview.css";
 import "./css/storyview.css";
 import "./css/slideCarousel.css";
 import "./css/searchBar.css";
+import "./css/footerBar.css";
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,0 +1,41 @@
+#footer_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 20vh;
+  width: 100%;
+  font-size: 1.3em;
+  background-color: var(--main-body-color);
+}
+
+.footer_text_area {
+  margin-left: 1%;
+  padding-top: 50px;
+  color: white;
+}
+.footer_text1 {
+  font-size: 1.7rem;
+}
+.footer_text1 {
+}
+.footer_text1 {
+}
+.footer_btn_box {
+  display: flex;
+  flex-direction: row;
+
+  align-items: flex-end;
+
+  padding: 20px 80px;
+  margin-left: 0 auto;
+}
+.social_btn {
+  margin: 5%;
+}
+
+.github_btn,
+.google_btn,
+.apple_btn {
+  width: 50px;
+  height: 50px;
+}
