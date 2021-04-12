@@ -20,10 +20,10 @@ class SearchBar extends Component {
         <input
           //   type="search"
           placeholder="뭐라도 입력하세요"
-          className="home_search"
+          className="search_bar"
           onChange={onchange}
         />
-        <button type="submit">
+        <button type="submit" className="search_submit">
           <FontAwesomeIcon icon={faSearch} className="search_icon" />
         </button>
       </div>

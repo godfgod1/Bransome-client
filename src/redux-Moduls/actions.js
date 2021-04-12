@@ -7,6 +7,7 @@ export const SEARCH = "SEARCH";
 export const LOADING = "LOADING";
 export const OPEN_MODAL = "OPEN_MODAL";
 export const CLOSE_MODAL = "CLOSE_MODAL";
+export const GOOGLE_OAUTH2 = "GOOGLE_OAUTH2";
 /* ACTIONS */
 
 // const a = () => {};
