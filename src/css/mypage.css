@@ -1,19 +1,82 @@
 #myPage_container {
   height: var(--height-vh);
-  display: grid;
-  background-image: var(--brands-background);
-  background-size: cover;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-  place-items: center;
+  background: rgb(173, 173, 173);
+  background: linear-gradient(
+    90deg,
+    rgba(173, 173, 173, 1) 0%,
+    rgba(128, 128, 128, 1) 67%
+  );
+  background-size: cover;
 }
 
-.myPage_Auth_profile_box,
-.myPage_my_favorite_box {
-  width: 95%;
-  height: 90%;
-  background: rgba(45, 82, 8, 0.226);
-  border-radius: 20px;
+.myPage_Auth_profile_box {
   display: flex;
   flex-direction: column;
+  border: 1px solid black;
+  align-items: center;
+  width: 100%;
+  flex: 1;
+}
+
+.profile_card {
+  width: 90%;
+  height: 300px;
+  background: white;
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 2%;
+}
+
+.profile_content {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile_picbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: var(--main-btn-color);
+  border-radius: 50%;
+  margin-left: 5%;
+}
+.profile_img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+.profile_email {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+
+.myPage_my_favorite_box {
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+}
+
+.brands_item_list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+
+  width: 95%;
+  height: 80%;
+
+  overflow-y: scroll;
 }
