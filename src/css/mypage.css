@@ -1,0 +1,19 @@
+#myPage_container {
+  height: var(--height-vh);
+  display: grid;
+  background-image: var(--brands-background);
+  background-size: cover;
+  grid-template-columns: repeat(2, 1fr);
+
+  place-items: center;
+}
+
+.myPage_Auth_profile_box,
+.myPage_my_favorite_box {
+  width: 95%;
+  height: 90%;
+  background: rgba(45, 82, 8, 0.226);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}

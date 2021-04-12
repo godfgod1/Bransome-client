@@ -7,7 +7,7 @@ import Best20 from "./Pages/BestPage";
 import Brand from "./Pages/BrandsPage";
 import Home from "./Pages/Home";
 import BrandInfo from "./Pages/Sub_Sections/BrandInfo";
-
+import MyPage from "./Pages/Sub_Sections/MyPage";
 function Bransome() {
   return (
     <Router>
@@ -17,7 +17,8 @@ function Bransome() {
 
         <Route path="/brand" component={Brand} />
         <Route path="/best20" component={Best20} />
-        <Route path="/brandinfo" component={BrandInfo} />
+        <Route path="/brandinfo" comwwponent={BrandInfo} />
+        <Route path="/mypage" component={MyPage} />
       </Switch>
     </Router>
   );
