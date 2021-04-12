@@ -36,7 +36,7 @@ const AuthModal = ({ show, setShow }) => {
       {show ? (
         <modal className="modal_container" onClick={closeModal} ref={modalRef}>
           <animated.div style={animations}>
-            <section className="modal_item" show={show} data-aos="zoom-in">
+            <section className="modal_item" show={show}>
               <article className="modal_main_image"></article>
               <article className="modal_contents"></article>
               <button

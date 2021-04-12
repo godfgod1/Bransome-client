@@ -14,19 +14,19 @@ function Best20() {
         <h1 className="best20">Best20</h1>
         <ul className="best_category_box">
           <li className="best_link_btn best_all_btn">
-            <Link to="/all">전체</Link>
+            <Link to="/best20/all">전체</Link>
           </li>
           <li className="best_link_btn best_elec_btn">
-            <Link to="/elec">전자기기</Link>
+            <Link to="/best20/elec">전자기기</Link>
           </li>
           <li className="best_link_btn best_coffee_btn">
-            <Link to="/coffee">커피</Link>
+            <Link to="/best20/coffee">커피</Link>
           </li>
           <li className="best_link_btn best_car_btn">
-            <Link to="/car">자동차</Link>
+            <Link to="/best20/car">자동차</Link>
           </li>
           <li className="best_link_btn best_it_btn">
-            <Link to="/it">IT/미디어</Link>
+            <Link to="/best20/it">IT/미디어</Link>
           </li>
         </ul>
       </div>
