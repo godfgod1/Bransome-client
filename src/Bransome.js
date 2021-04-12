@@ -17,7 +17,7 @@ function Bransome() {
 
         <Route path="/brand" component={Brand} />
         <Route path="/best20" component={Best20} />
-        <Route path="/brandinfo" comwwponent={BrandInfo} />
+        <Route path="/brandinfo" component={BrandInfo} />
         <Route path="/mypage" component={MyPage} />
       </Switch>
     </Router>
