@@ -1,0 +1,34 @@
+.search {
+  margin-top: 10%;
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  border: 3px solid var(--main-btn-color);
+  background: white;
+  width: 90%;
+}
+
+.search_bar {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.search:hover {
+  box-shadow: 0 0 7px var(--main-btn-color);
+}
+.search_submit {
+  color: black;
+  width: 50px;
+
+  border-radius: 50%;
+  cursor: pointer;
+  background: none;
+}
+
+.search_icon {
+  font-size: 25px;
+}
