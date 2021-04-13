@@ -1,7 +1,9 @@
+import logos from "../../logos/brandlogo/logo";
 import BrandItem from "../../components/BrandsItem";
 import FooterContent from "../../components/FooterContent";
 import SearchBar from "../../components/SearchBar";
 import profileimg from "../../images/profile.png";
+
 const MyPage = () => {
   return (
     <>
@@ -25,7 +27,9 @@ const MyPage = () => {
         <section className="myPage_my_favorite_box">
           <h1>My Favorite</h1>
           <ul className="brands_item_list">
-            <BrandItem />
+            {logos.map((item, idx) => {
+              return <BrandItem key={idx} item={item} />;
+            })}
           </ul>
         </section>
       </div>

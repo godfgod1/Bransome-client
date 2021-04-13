@@ -4,19 +4,15 @@
   flex-direction: row;
   justify-content: center;
 
-  background: rgb(173, 173, 173);
-  background: linear-gradient(
-    90deg,
-    rgba(173, 173, 173, 1) 0%,
-    rgba(128, 128, 128, 1) 67%
-  );
+  background: white;
+
   background-size: cover;
 }
 
 .myPage_Auth_profile_box {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+
   align-items: center;
   width: 100%;
   flex: 1;
@@ -62,9 +58,13 @@
 }
 
 .myPage_my_favorite_box {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  background-color: var(--sub-body-color);
   width: 100%;
-  flex: 1;
+  flex: 2;
 }
 
 .brands_item_list {
@@ -72,7 +72,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 2%;
   padding: 2%;
 
   width: 95%;
