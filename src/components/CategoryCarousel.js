@@ -16,7 +16,7 @@ const CategoryCarousel = () => {
           alignItems: "center",
           borderRadius: "50%",
           zIndex: 10,
-          background: "red",
+          background: "var(--main-btn-color)",
           width: "50px",
           height: "50px",
         }}
@@ -38,7 +38,7 @@ const CategoryCarousel = () => {
           alignItems: "center",
           borderRadius: "50%",
           zIndex: 10,
-          background: "red",
+          background: "var(--main-btn-color)",
           width: "50px",
           height: "50px",
         }}
