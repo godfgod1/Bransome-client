@@ -5,15 +5,19 @@
 
   background: white;
   border-radius: 20px;
+  margin-left: 1%;
+  margin-bottom: 1%;
 
   width: 150px;
   height: 150px;
+
   overflow: hidden;
 }
 
 .brand_delete_btn {
   width: 20px;
   height: 20px;
+
   z-index: 10px;
 
   font-size: 1.5rem;

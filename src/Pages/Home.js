@@ -7,21 +7,24 @@ import WelcomeView from "./Main_Sections/WelcomeView";
 import StoryView from "./Main_Sections/StoryView";
 import CommentView from "./Main_Sections/CommentView";
 import FooterContent from "../components/FooterContent";
+import BrandCategoryView from "./Main_Sections/BrandCategoryView";
+import Introduce from "./Main_Sections/IntroduceView";
 
 const Home = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
-  useEffect(() => {
-    if (Aos) {
-      Aos.refresh();
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (Aos) {
+  //     Aos.refresh();
+  //   }
+  // }, []);
 
   return (
     <section className="home_container">
       <WelcomeView />
-      <StoryView />
+      <BrandCategoryView />
+      <Introduce />
       <CommentView />
       <FooterContent />
     </section>
