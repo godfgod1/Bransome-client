@@ -5,10 +5,19 @@ import {
   Switch,
 } from "react-router-dom";
 
+import React, { useState } from "react";
+
 import netflix from "../../images/test.netflix.png";
-import eye from "../../images/eye.icon.svg";
-import heart from "../../images/heart.icon.svg";
-import save from "../../images/save.icon.svg";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faBookmark, faHeart } from "@fortawesome/free-regular-svg-icons";
+
+import {
+  faBookmark as faBookUnMark,
+  faHeart as faUnHeart,
+  faEye,
+} from "@fortawesome/free-solid-svg-icons";
 
 import history from "./BrandInfoHistory";
 import chart from "./BrandInfoChart";
@@ -17,6 +26,18 @@ import insight from "./BrandInfoInsight";
 import "../../css/BrandInfo.css";
 
 const BrandInfo = ({ match }) => {
+  const [bookmark, setBookmark] = useState(false);
+
+  const handleBookmark = () => {
+    setBookmark(!bookmark);
+  };
+
+  const [heart, setHeart] = useState(false);
+
+  const handleHeart = () => {
+    setHeart(!heart);
+  };
+
   return (
     <div className="wrap">
       <section className="logo">
@@ -39,16 +60,28 @@ const BrandInfo = ({ match }) => {
             </Link>
           </div>
           <div className="contents-action">
-            <div id="views">1.8k</div>
-            <button type="button" className="btn_action" id="eye">
-              <img src={eye} alt="eye" />
-            </button>
-            <button type="button" className="btn_action" id="heart">
-              <img src={heart} alt="heart" />
-            </button>
-            <button type="button" className="btn_action" id="save">
-              <img src={save} alt="save" />
-            </button>
+            <div className="views">15.8k</div>
+            <div className="eyeIcon">
+              <FontAwesomeIcon icon={faEye} />
+            </div>
+
+            {/* 하트 온, 오프 */}
+            <div className="heartIcon" onClick={handleHeart}>
+              {heart ? (
+                <FontAwesomeIcon className="heartIconOn" icon={faUnHeart} />
+              ) : (
+                <FontAwesomeIcon icon={faHeart} />
+              )}
+            </div>
+
+            {/* 북마크 온, 오프 */}
+            <div className="bookmarkIcon" onClick={handleBookmark}>
+              {bookmark ? (
+                <FontAwesomeIcon icon={faBookUnMark} />
+              ) : (
+                <FontAwesomeIcon icon={faBookmark} />
+              )}
+            </div>
           </div>
         </section>
         <Switch>

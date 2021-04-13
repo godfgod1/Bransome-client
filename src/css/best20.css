@@ -1,0 +1,48 @@
+.best_container {
+  background-color: var(--main-body-color);
+  height: 100vh;
+}
+
+.best_title_wrap {
+  padding-top: 30px;
+  margin-left: 100px;
+}
+
+.best20 {
+  color: var(--main-text-color);
+  font-weight: bolder;
+}
+
+.best_category_box {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 450px;
+}
+
+.best_link_btn {
+}
+
+/* 카테고리 */
+a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.best_rankings_wrap {
+  padding: 30px 10px 10px 100px;
+}
+
+.best_rankings_box_one_to_ten > li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 4px;
+  margin-top: 10px;
+  background-color: #f0f4f5;
+  font-size: 20px;
+  width: 300px;
+  height: 50px;
+}

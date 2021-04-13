@@ -31,9 +31,10 @@ button {
   outline: none;
 }
 :root {
+  --brands-background: url("../images/background3.jpg");
   --main-btn-color: rgb(255, 115, 0);
   --main-body-color: #191f28;
-  --main-text-color: white;
+  --main-text-color: #f0f4f5;
   --width-pers: 100%;
   --width-vw: 100vw;
   --height-pers: 100%;
