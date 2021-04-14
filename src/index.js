@@ -14,6 +14,9 @@ import "./css/footerBar.css";
 import "./css/mypage.css";
 import "./css/BrandCategoryView.css";
 import "./css/IntroduceView.css";
+import "./css/BrandsPages.css";
+import "./css/best20.css";
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

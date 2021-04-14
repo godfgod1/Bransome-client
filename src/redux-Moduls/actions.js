@@ -8,6 +8,11 @@ export const LOADING = "LOADING";
 export const OPEN_MODAL = "OPEN_MODAL";
 export const CLOSE_MODAL = "CLOSE_MODAL";
 export const GOOGLE_OAUTH2 = "GOOGLE_OAUTH2";
+export const FETCH_BRANDS = "FETCH_BRANDS";
+export const FILTER_BRAND_BY_CATEGORY = "FILTER_BRAND_BY_CATEGORY";
+
+export const ADD_BRAND = "ADD_BRAND";
+export const REMOVE_BRAND = "REMOVE_BRAND";
 /* ACTIONS */
 
 // const a = () => {};

@@ -1,11 +1,9 @@
 import { NavLink as Link } from "react-router-dom";
 
-import "../css/best20.css";
-
-import apple from "../images/best20/1.apple.png";
-import amazon from "../images/best20/2.amazon.png";
-import google from "../images/best20/3.google.png";
-import ms from "../images/best20/4.ms.png";
+import apple from "../../images/best20/1.apple.png";
+import amazon from "../../images/best20/2.amazon.png";
+import google from "../../images/best20/3.google.png";
+import ms from "../../images/best20/4.ms.png";
 
 function Best20() {
   return (

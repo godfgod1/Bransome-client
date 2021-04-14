@@ -1,27 +1,33 @@
-import react, { Component } from "react";
-import {
-  NavLink as Link,
-  Route,
-  BrowserRouter as Router,
-  Switch,
-} from "react-router-dom";
-import netflix from "../images/test.netflix.png";
-import search from "../images/search.icon.svg";
-import "../css/Brands.css";
-import SearchBar from "../components/SearchBar";
-import FooterContent from "../components/FooterContent";
+import React, { useState, Component } from "react";
 
-const Brand = ({ match }) => {
+import SearchBar from "../../components/SearchBar";
+import FooterContent from "../../components/FooterContent";
+
+import brands from "../DummyData/brandsLogo";
+import BrandScreen from "./BrandScreen";
+import CategoryBtn from "./CategoryBtn";
+
+const categoryList = ["All", ...new Set(brands.map((b) => b.category))];
+console.log(categoryList);
+
+const BrandPages = ({ match }) => {
+  const [showBrand, setShowBrand] = useState(brands);
+  const [categoriesBtn, setCategoriesBtn] = useState(categoryList);
+
+  const filterBrand = (btn) => {
+    if (btn === "All") {
+      setShowBrand(brands);
+      return;
+    }
+    const filteredBrand = brands.filter((b) => b.category === btn);
+    setShowBrand(filteredBrand);
+  };
   return (
     <>
       <div id="brands_view">
         <div className="brand_left_view">
           <header className="brand_header">
-            <h2>
-              좋아하는 브랜드를 <br />
-              마이페이지에 <br />
-              담아보세요
-            </h2>
+            <h2>좋아하는 브랜드를 마이페이지에 담아보세요.</h2>
           </header>
           <div className="brand_search_box">
             <SearchBar />
@@ -32,7 +38,8 @@ const Brand = ({ match }) => {
           ></input>
           <img className="glass" src={search} /> */}
           </div>
-          <Router>
+
+          {/* <Router>
             <div className="brand_categories">
               <Link to={`${match.url}/All`} className="brand_category">
                 <span className="categories_btn All">전체</span>
@@ -52,10 +59,14 @@ const Brand = ({ match }) => {
                 <span className="categories_btn automobile">자동차</span>
               </Link>
             </div>
-          </Router>
+          </Router> */}
+          <CategoryBtn
+            categoriesBtn={categoriesBtn}
+            filterBrand={filterBrand}
+          />
         </div>
         <div className="brand_right_view">
-          <div className="brand_scroll_content">dd</div>
+          <BrandScreen showBrand={showBrand} />
         </div>
       </div>
       <FooterContent />
@@ -63,4 +74,4 @@ const Brand = ({ match }) => {
   );
 };
 
-export default Brand;
+export default BrandPages;

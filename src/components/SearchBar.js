@@ -38,4 +38,4 @@ const mapStateToProps = (state) => ({
 // const mapDispatchToProps = (dispatch) => {
 //   return bindActionCreators({ search }, dispatch);
 // };
-export default connect(mapStateToProps, { search })(SearchBar);
+export default SearchBar;
