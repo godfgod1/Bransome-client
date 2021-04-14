@@ -1,4 +1,4 @@
-import person1 from "../../../images/profile.jpg";
+import person1 from "../../images/profile.jpg";
 
 let rand1 = Math.floor(Math.random() * 79) + 10;
 function getRandomArbitrary(min, max) {

@@ -19,7 +19,7 @@ class SearchBar extends Component {
       <div className="search">
         <input
           //   type="search"
-          placeholder="뭐라도 입력하세요"
+          placeholder="브랜드를 검색해보세요"
           className="search_bar"
           onChange={onchange}
         />
@@ -38,4 +38,4 @@ const mapStateToProps = (state) => ({
 // const mapDispatchToProps = (dispatch) => {
 //   return bindActionCreators({ search }, dispatch);
 // };
-export default connect(mapStateToProps, { search })(SearchBar);
+export default SearchBar;

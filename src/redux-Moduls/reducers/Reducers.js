@@ -5,7 +5,7 @@ import authModalReducers from "./authModalReducers";
 /* 작성예시
  */
 const rootReducer = combineReducers({
-  brands: searchReducers,
+  brandSearch: searchReducers,
   authModalReducers,
 });
 

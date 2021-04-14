@@ -1,4 +1,4 @@
-import comments from "./fakedata/fakeComment";
+import comments from "../DummyData/fakeComment";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 const CommentView = () => {

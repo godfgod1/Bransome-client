@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import slider from "../Pages/Main_Sections/fakedata/fakeSlides";
+import slider from "../Pages/DummyData/fakeSlides";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCaretSquareLeft,
