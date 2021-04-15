@@ -19,8 +19,8 @@
   width: 5px;
   background-color: inherit;
 }
-::-webkit-scrollbar-track {
-}
+/* ::-webkit-scrollbar-track {
+} */
 ::-webkit-scrollbar-thumb {
   background: var(--main-btn-color);
   border-radius: 7px;
@@ -30,10 +30,19 @@ button {
   border: none;
   outline: none;
 }
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
 :root {
-  --brands-background: url("../images/background1.jpg");
+  --brands-background: url("../images/background3.jpg");
   --main-btn-color: rgb(255, 115, 0);
   --main-body-color: #191f28;
+  --sub-body-color: #e6e6e6;
   --main-text-color: #f0f4f5;
   --width-pers: 100%;
   --width-vw: 100vw;

@@ -1,9 +1,10 @@
-//기본적인 initialState설정
 const initialState = {
-  brands: [],
+  brandSearh: [],
+
   value: "",
-  brand: [],
+  brandName: [],
   loading: false,
   openModalScreen: false,
 };
+
 export default initialState;

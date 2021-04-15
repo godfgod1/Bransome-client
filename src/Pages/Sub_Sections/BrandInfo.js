@@ -35,7 +35,7 @@ const BrandInfo = ({ match }) => {
   const handleHeart = () => {
     setHeart(!heart);
   };
-
+  const [brand, setBrand] = useState({});
   return (
     <div className="wrap">
       <section className="logo">
