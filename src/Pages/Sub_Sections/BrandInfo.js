@@ -8,9 +8,7 @@ import {
 import React, { useState } from "react";
 
 import netflix from "../../images/test.netflix.png";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { faBookmark, faHeart } from "@fortawesome/free-regular-svg-icons";
 
 import {

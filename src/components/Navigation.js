@@ -37,6 +37,16 @@ const Navigation = () => {
           </li>
 
           <li className="navbar_sign_box navbar_item">
+            {/* {isLogin ? (
+              <div>
+                <div>김코딩</div>
+                <div>유저이미지</div>
+              </div>
+            ) : (
+              <button className="modal_login_btn" onClick={manageState}>
+                로그인
+              </button>
+            )} */}
             <button className="modal_login_btn" onClick={manageState}>
               로그인
             </button>

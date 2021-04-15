@@ -1,5 +1,12 @@
 import { useRef, useCallback, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
+import { GLogin, GLogout } from "./auth/GoogleLogin";
+import { KLogin } from "./auth/KakaoLogin";
+import { resolveConfig } from "prettier";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+
+const LoginState = ({ login, setLogin }) => {};
 
 const AuthModal = ({ show, setShow }) => {
   const modalRef = useRef();
@@ -31,6 +38,7 @@ const AuthModal = ({ show, setShow }) => {
     document.addEventListener("keydown", keyPress);
     return () => document.addEventListener("keydown", keyPress);
   }, [keyPress]);
+
   return (
     <>
       {show ? (
@@ -38,13 +46,25 @@ const AuthModal = ({ show, setShow }) => {
           <animated.div style={animations}>
             <section className="modal_item" show={show} data-aos="zoom-in">
               <article className="modal_main_image"></article>
-              <article className="modal_contents"></article>
+              <article className="modal_contents">
+                <div className="login_title">Welcome to Bransome</div>
+                {/* {isLogin ? 
+                <div>
+                  <button>마이페이지<button>
+                    <Logout />
+                  <div> : <Login />} */}
+                <GLogin />
+                <KLogin />
+                <div className="login_text">
+                  SNS계정으로 간편하게 로그인하세요.
+                </div>
+              </article>
               <button
                 className="modal_close_btn"
                 aria-label="Close modal"
                 onClick={() => setShow((open) => !open)}
               >
-                Close
+                <FontAwesomeIcon className="esc_btn_svg" icon={faTimes} />
               </button>
             </section>
           </animated.div>
