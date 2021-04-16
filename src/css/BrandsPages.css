@@ -30,9 +30,21 @@
   justify-content: flex-start;
   margin-left: 5%;
 }
-.brand_category {
-  padding: 2%;
+
+.ccategory_btn_box {
+  display: flex;
+  flex-direction: column;
+  padding: 8%;
+}
+
+.catogry_btn {
+  width: 80%;
+  color: gray;
+}
+
+.categoryActive {
   color: black;
+  padding: 5%;
 }
 
 .brand_right_view {
@@ -77,4 +89,26 @@
 .brand_img {
   height: 100%;
   object-fit: contain;
+}
+
+@media all and (max-width: 1450px) {
+  .brand_header > h2 {
+    padding: 5%;
+    font-size: 4.5rem;
+    transition: 0.5s linear;
+  }
+  @media all and (max-width: 1350px) {
+    .brand_header > h2 {
+      padding: 5%;
+      font-size: 4rem;
+      transition: 0.5s linear;
+    }
+    @media all and (max-width: 1170px) {
+      .brand_header > h2 {
+        padding: 5%;
+        font-size: 3rem;
+        transition: 0.5s linear;
+      }
+    }
+  }
 }

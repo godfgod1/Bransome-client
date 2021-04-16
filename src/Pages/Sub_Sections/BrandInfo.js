@@ -41,47 +41,48 @@ const BrandInfo = ({ match }) => {
       <section className="logo">
         <img id="brand-logo" src={netflix} alt="netflix"></img>
       </section>
+
+      <section id="contents-top">
+        <div className="contents-menu">
+          <Link to={`${match.url}`} className="brandinfo-history">
+            <button className="content-subject-button" renderAs="button">
+              <span>히스토리</span>
+            </button>
+          </Link>
+
+          <Link to={`${match.url}/chart`} className="brandinfo-chart">
+            <button className="content-subject-button">주가 차트</button>
+          </Link>
+          <Link to={`${match.url}/insight`} className="brandinfo-insight">
+            <button className="content-subject-button">인사이트</button>
+          </Link>
+        </div>
+        <div className="contents-action">
+          <div className="views">15.8k</div>
+          <div className="eyeIcon">
+            <FontAwesomeIcon icon={faEye} />
+          </div>
+
+          {/* 하트 온, 오프 */}
+          <div className="heartIcon" onClick={handleHeart}>
+            {heart ? (
+              <FontAwesomeIcon className="heartIconOn" icon={faUnHeart} />
+            ) : (
+              <FontAwesomeIcon icon={faHeart} />
+            )}
+          </div>
+
+          {/* 북마크 온, 오프 */}
+          <div className="bookmarkIcon" onClick={handleBookmark}>
+            {bookmark ? (
+              <FontAwesomeIcon icon={faBookUnMark} />
+            ) : (
+              <FontAwesomeIcon icon={faBookmark} />
+            )}
+          </div>
+        </div>
+      </section>
       <Router>
-        <section id="contents-top">
-          <div className="contents-menu">
-            <Link to={`${match.url}`} className="brandinfo-history">
-              <button className="content-subject-button" renderAs="button">
-                <span>히스토리</span>
-              </button>
-            </Link>
-
-            <Link to={`${match.url}/chart`} className="brandinfo-chart">
-              <button className="content-subject-button">주가 차트</button>
-            </Link>
-            <Link to={`${match.url}/insight`} className="brandinfo-insight">
-              <button className="content-subject-button">인사이트</button>
-            </Link>
-          </div>
-          <div className="contents-action">
-            <div className="views">15.8k</div>
-            <div className="eyeIcon">
-              <FontAwesomeIcon icon={faEye} />
-            </div>
-
-            {/* 하트 온, 오프 */}
-            <div className="heartIcon" onClick={handleHeart}>
-              {heart ? (
-                <FontAwesomeIcon className="heartIconOn" icon={faUnHeart} />
-              ) : (
-                <FontAwesomeIcon icon={faHeart} />
-              )}
-            </div>
-
-            {/* 북마크 온, 오프 */}
-            <div className="bookmarkIcon" onClick={handleBookmark}>
-              {bookmark ? (
-                <FontAwesomeIcon icon={faBookUnMark} />
-              ) : (
-                <FontAwesomeIcon icon={faBookmark} />
-              )}
-            </div>
-          </div>
-        </section>
         <Switch>
           <Route path={`${match.url}`} exact component={history} />
           <Route path={`${match.url}/chart`} component={chart} />

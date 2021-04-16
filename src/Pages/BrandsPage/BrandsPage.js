@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react";
+import React, { useState, Component, useEffect } from "react";
 
 import SearchBar from "../../components/SearchBar";
 import FooterContent from "../../components/FooterContent";
@@ -7,21 +7,28 @@ import brands from "../DummyData/brandsLogo";
 import BrandScreen from "./BrandScreen";
 import CategoryBtn from "./CategoryBtn";
 
-const categoryList = ["All", ...new Set(brands.map((b) => b.category))];
-console.log(categoryList);
+// const categoryList = ["All", ...new Set(brands.map((b) => b.category))];
+// console.log(categoryList);
 
 const BrandPages = ({ match }) => {
-  const [showBrand, setShowBrand] = useState(brands);
-  const [categoriesBtn, setCategoriesBtn] = useState(categoryList);
+  const [showBrand, setShowBrand] = useState([]);
+  const [categoriesBtn, setCategoriesBtn] = useState("All");
 
-  const filterBrand = (btn) => {
-    if (btn === "All") {
-      setShowBrand(brands);
-      return;
-    }
-    const filteredBrand = brands.filter((b) => b.category === btn);
-    setShowBrand(filteredBrand);
-  };
+  // const filterBrand = () => {
+  //   if (categoriesBtn === "All") {
+  //     setShowBrand(brands);
+  //     return;
+  //   }
+  //   const filteredBrand = brands.filter((b) => b.category === categoriesBtn);
+  //   setShowBrand(filteredBrand);
+  // };
+
+  useEffect(() => {
+    categoriesBtn === "All"
+      ? setShowBrand(brands)
+      : setShowBrand(brands.filter((b) => b.category === categoriesBtn));
+  }, [categoriesBtn]);
+
   return (
     <>
       <div id="brands_view">
@@ -38,7 +45,6 @@ const BrandPages = ({ match }) => {
           ></input>
           <img className="glass" src={search} /> */}
           </div>
-
           {/* <Router>
             <div className="brand_categories">
               <Link to={`${match.url}/All`} className="brand_category">
@@ -60,10 +66,41 @@ const BrandPages = ({ match }) => {
               </Link>
             </div>
           </Router> */}
-          <CategoryBtn
-            categoriesBtn={categoriesBtn}
-            filterBrand={filterBrand}
-          />
+          {/* {filterBrand.map((name, idx) => {
+            return (
+              <>
+                <CategoryBtn
+                  key={idx}
+                  name={name.category}
+                  tagActive={categoriesBtn === name.category ? true : false}
+                  handleSetTag={setCategoriesBtn}
+                />
+              </>
+            );
+          })} */}
+
+          <article className="category_btn_box">
+            <CategoryBtn
+              name="All"
+              categoryActive={categoriesBtn === "All" ? true : false}
+              handleSetCategory={setCategoriesBtn}
+            />
+            <CategoryBtn
+              name="IT&미디어"
+              categoryActive={categoriesBtn === "IT&미디어" ? true : false}
+              handleSetCategory={setCategoriesBtn}
+            />
+            <CategoryBtn
+              name="커피&음료"
+              categoryActive={categoriesBtn === "커피&음료" ? true : false}
+              handleSetCategory={setCategoriesBtn}
+            />
+            <CategoryBtn
+              name="자동차"
+              categoryActive={categoriesBtn === "자동차" ? true : false}
+              handleSetCategory={setCategoriesBtn}
+            />
+          </article>
         </div>
         <div className="brand_right_view">
           <BrandScreen showBrand={showBrand} />

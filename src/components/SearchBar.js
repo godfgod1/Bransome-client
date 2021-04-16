@@ -1,39 +1,32 @@
-import React, { Component } from "react";
+import React, { Component, useState, useEffect } from "react";
 import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
-import { search, setLoanding } from "../redux-Moduls/actions";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-
-class SearchBar extends Component {
-  onChange = (e) => {
-    this.props.search(e.target.value);
+import brands from "../Pages/DummyData/brandsLogo";
+const SearchBar = () => {
+  const [query, setQuery] = useState(brands);
+  const [searching, setSearching] = useState();
+  console.log(query);
+  console.log(brands);
+  const search = () => {
+    console.log(1);
+    setSearching(query);
   };
-
-  onSubmit = (e) => {
-    e.preventDefault();
-    this.props.setLoanding();
-  };
-  render() {
-    return (
-      <div className="search">
-        <input
-          //   type="search"
-          placeholder="브랜드를 검색해보세요"
-          className="search_bar"
-          onChange={onchange}
-        />
-        <button type="submit" className="search_submit">
-          <FontAwesomeIcon icon={faSearch} className="search_icon" />
-        </button>
-      </div>
-    );
-  }
-}
-
-const mapStateToProps = (state) => ({
-  value: state.brands.value,
-});
+  return (
+    <div className="search">
+      <input
+        //   type="search"
+        placeholder="브랜드를 검색해보세요"
+        className="search_bar"
+        onChange={(e) => setQuery(e.target.value)}
+      />
+      <button type="submit" className="search_submit" onClick={search}>
+        <FontAwesomeIcon icon={faSearch} className="search_icon" />
+      </button>
+    </div>
+  );
+};
 
 // const mapDispatchToProps = (dispatch) => {
 //   return bindActionCreators({ search }, dispatch);
