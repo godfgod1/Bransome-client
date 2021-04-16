@@ -6,7 +6,7 @@
   top: 0;
   z-index: 100;
   height: 70px;
-  background-color: var(--main-body-color);
+  background: var(--main-body-color);
 }
 
 .navbar_container {
@@ -26,30 +26,30 @@
   width: 200px;
 }
 
-.navbar_item_box {
+.nav_menu_box {
   display: grid;
   grid-template-columns: repeat(6, auto);
   grid-gap: 30px;
   font-size: 1.8rem;
   text-align: center;
-  justify-self: end;
+  justify-content: end;
   cursor: pointer;
   text-decoration: none;
   margin-right: 40px;
 }
 
 .navbar_link_btn {
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-weight: bolder;
-  color: var(--main-text-color);
+  padding: 0.5rem 1rem;
   height: 100%;
 }
 
 .navbar_link_btn:hover {
-  border-bottom: 5px solid var(--main-text-color);
-  transition: all 0.3s ease-out;
+  border-bottom: 4px solid white;
+  transition: all 0.2s ease-out;
 }
 
 .navbar_sign_in_btn:hover {
@@ -61,8 +61,98 @@
   border: none;
 }
 
+.menu_bars {
+  display: none;
+}
 .github_url {
   width: 180px;
 }
-@media all and (max-width: 740px) {
+
+.menu_btn {
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu_btn:hover {
+  padding: 8px 20px;
+  transition: all 0.3s ease-out;
+
+  transition: 250ms;
+}
+
+.btn__medium {
+}
+
+@media all and (min-width: 300px) and (max-width: 850px) {
+  /* .navbar_box {
+    height: 100px;
+  }
+  .navbar_link_btn {
+    display: none;
+    transition: linear 1s;
+  }
+  */
+  .nav_menu_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav_menu_box.active {
+    background: var(--main-body-color);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .liitems {
+    margin-top: 3%;
+  }
+  .menu_icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-70%, 25%);
+
+    cursor: pointer;
+  }
+  .menu_bars {
+    display: block;
+    font-size: 3em;
+    color: white;
+    transition: linear 1s;
+  }
+  .menu_unknown {
+    font-size: 3em;
+    color: white;
+  }
+
+  .navbar_link_btn {
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    display: table;
+  }
+
+  .navbar_link_btn:hover {
+    background-color: white;
+    color: var(--main-body-color);
+  }
+  .modal_login_btn {
+    display: block;
+    margin: 1rem auto;
+    width: 50%;
+    height: 8%;
+    font-size: 2rem;
+  }
 }

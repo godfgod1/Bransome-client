@@ -32,3 +32,9 @@
 .search_icon {
   font-size: 25px;
 }
+
+@media all and (max-width: 900px) {
+  .search {
+    width: 60%;
+  }
+}

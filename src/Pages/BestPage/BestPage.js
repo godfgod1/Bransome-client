@@ -29,7 +29,7 @@ function Best20() {
         </ul>
       </div>
       <div className="best_rankings_wrap">
-        <ul className="best_rankings_box_one_to_ten">
+        {/* <ul className="best_rankings_box_one_to_ten">
           <li>
             <div className="ranking">1</div>
             <img className="logo" src={apple} />
@@ -50,7 +50,7 @@ function Best20() {
             <img className="logo" src={ms} />
             <div className="brand_name">MS</div>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </section>
   );

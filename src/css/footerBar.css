@@ -5,6 +5,7 @@
   height: 20vh;
   width: 100%;
   font-size: 1.3em;
+  z-index: 3;
   background-color: var(--main-body-color);
 }
 
@@ -38,4 +39,21 @@
 .apple_btn {
   width: 50px;
   height: 50px;
+}
+
+@media all and (max-width: 950px) {
+  #footer_container {
+    height: 100%;
+    flex-direction: column;
+    font-size: 1.3em 100%;
+  }
+  .footer_text1 {
+    font-size: 1.7rem 100%;
+  }
+  .github_btn,
+  .google_btn,
+  .apple_btn {
+    width: 50px;
+    height: 50px;
+  }
 }
